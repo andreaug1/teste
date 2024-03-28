@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+body {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+}
+
+a:hover {
+    background-color: #0f72bd;
+}
+
+#logo {
+    display: flex;
+    width: 90px;
+    border-radius: 50%;
+}
+
+#header {
+    box-sizing: border-box;
+    height: 70px;
+    padding: 3rem   ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #107acc;
+}
+
+#menu {
+    display: flex;
+    list-style: none;
+    gap:.9rem;
+    position: relative;/*position/ right a */
+    right: 410px;
+
+}
+
+#menu a {
+    display: block;
+    padding: 1.5rem; 
+}
+
+#bnt {
+    display: none;
+}
+
+@media (max-width: 730px) {
+
+    #menu {
+        display: none;
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        right: 0px;
+        background: #107acc;
+        height: 0;
+        transition: 0.6s;
+        z-index: 1000;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    #nav.active #menu {
+        height: calc(100vh - 70px);
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    #menu a {
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid #000000;
+    }
+    #bnt {
+        display: flex;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        background: none;
+        border: none;
+        cursor: pointer;
+        gap: 0.5rem;
+    }
+
+    #hamburger {
+        border-top: 2px solid;
+        width: 20px;
+      }
+      #hamburger::after,
+      #hamburger::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: 0.3s;
+        position: relative;
+    }
+
+    #nav.active #hamburger {
+        border-top-color: transparent;
+    }
+
+    #nav.active #hamburge::before {
+        transform: rotate(135deg);
+    }
+
+    #nav.active #hamburge::after {
+        transform: rotate(-135deg);
+        top: -7px;
+
+    }
+}

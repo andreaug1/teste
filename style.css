@@ -2,6 +2,8 @@
 body {
     padding: 0;
     margin: 0;
+    /*background-color: rgb(	211,211,211);*/
+    background-color: #dadeeb;
 }
 
 a {
@@ -26,17 +28,15 @@ a:hover {
     padding: 3rem   ;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    background: #107acc;
+    justify-content: center;
+    /*background: #107acc;*/
+    background: #00498b;
 }
 
 #menu {
     display: flex;
     list-style: none;
     gap:.9rem;
-    position: relative;/*position/ right a */
-    right: 410px;
-
 }
 
 #menu a {
@@ -44,8 +44,57 @@ a:hover {
     padding: 1.5rem; 
 }
 
-#bnt {
+#bnt-mobile {
     display: none;
+}
+
+#apresentaçao {
+    display: flex;
+    justify-content: center;
+    margin: 10px 75px;
+    padding: auto;
+}
+
+#apresentaçao img {
+    padding: 100;
+    
+}
+
+#left:hover {
+    background-color:rgb(	211,211,211);
+    border-radius: 20px;
+}
+
+#right:hover {
+    background-color:rgb(	211,211,211);
+    border-radius: 20px;
+}
+
+#setas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: none;
+}
+
+#left {
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    z-index: 1;
+    left: 180px;
+    font-size: 25px;
+}
+
+
+#right {
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    z-index: 1;
+    right: 180px;
+    font-size: 25px;
 }
 
 @media (max-width: 730px) {
@@ -75,7 +124,7 @@ a:hover {
         margin: 0 1rem;
         border-bottom: 2px solid #000000;
     }
-    #bnt {
+    #bnt-mobile {
         display: flex;
         padding: 0.5rem 1rem;
         font-size: 1rem;

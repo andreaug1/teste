@@ -1,3 +1,4 @@
+/*BOTÃO MOBILE MENU */
 const btnMobile = document.getElementById('btn-mobile');
 
 function toggleMenu(event) {
@@ -16,14 +17,13 @@ function toggleMenu(event) {
 btnMobile.addEventListener('click', toggleMenu);
 btnMobile.addEventListener('touchstart', toggleMenu);
 
-/*------------*/
-function trocarImagem() {
-    var imagem = document.getElementById('figura');
-    if (imagem.src.match("contato.png")) {
-        imagem.src = "escola.png";
-        imagem.alt = "Imagem 2";
-    } else {
-        imagem.src = "contato.png";
-        imagem.alt = "Imagem 1";
-    }
-}
+/*trocar de imagens */
+  var imagens = ["contato.png", "escola.png", "fazenda.png"]; // Lista de caminhos das imagens
+  var indiceAtual = 0; // Índice da imagem atual
+
+  function trocarImagem() {
+    var imagem = document.getElementById("figura");
+    indiceAtual = (indiceAtual + 1) % imagens.length; // Atualiza o índice para a próxima imagem
+    imagem.src = imagens[indiceAtual]; // Define o novo caminho da imagem
+    imagem.alt = "Imagem " + (indiceAtual + 1); // Atualiza o texto alternativo, se necessário
+  }

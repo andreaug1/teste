@@ -25,7 +25,7 @@ a:hover {
 #header {
     box-sizing: border-box;
     height: 70px;
-    padding: 3rem   ;
+    padding: 3rem ;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -52,13 +52,8 @@ a:hover {
     display: flex;
     justify-content: center;
     margin: 10px 75px;
-    padding: auto;
 }
 
-#apresentaçao img {
-    padding: 100;
-    
-}
 
 #left:hover {
     background-color:rgb(	211,211,211);
@@ -83,7 +78,7 @@ a:hover {
     background-color: transparent;
     position: absolute;
     z-index: 1;
-    left: 180px;
+    left: 220px;
     font-size: 25px;
 }
 
@@ -93,7 +88,7 @@ a:hover {
     background-color: transparent;
     position: absolute;
     z-index: 1;
-    right: 180px;
+    right: 220px;
     font-size: 25px;
 }
 
@@ -163,4 +158,12 @@ a:hover {
         top: -7px;
 
     }
+    #setas{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: none;
+        background-color: none;
+    } 
+
 }

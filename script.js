@@ -15,3 +15,15 @@ function toggleMenu(event) {
 
 btnMobile.addEventListener('click', toggleMenu);
 btnMobile.addEventListener('touchstart', toggleMenu);
+
+/*------------*/
+function trocarImagem() {
+    var imagem = document.getElementById('figura');
+    if (imagem.src.match("contato.png")) {
+        imagem.src = "escola.png";
+        imagem.alt = "Imagem 2";
+    } else {
+        imagem.src = "contato.png";
+        imagem.alt = "Imagem 1";
+    }
+}

@@ -25,11 +25,11 @@ a:hover {
 #header {
     box-sizing: border-box;
     height: 70px;
+    width: 100%;
     padding: 3rem ;
     display: flex;
     align-items: center;
     justify-content: center;
-    /*background: #107acc;*/
     background: #00498b;
 }
 
@@ -51,6 +51,7 @@ a:hover {
 #apresentaçao {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin: 10px 75px;
 }
 
@@ -67,8 +68,8 @@ a:hover {
 
 #setas {
     display: flex;
-    justify-content: center;
-    align-items: center;
+  /*justify-content: center;
+    align-items: center;*/
     border: none;
     background-color: none;
 }
@@ -158,6 +159,12 @@ a:hover {
         top: -7px;
 
     }
+
+    #figura {
+        width: 200px;
+        height: 100px;
+    }
+
     #setas{
         display: flex;
         justify-content: space-between;

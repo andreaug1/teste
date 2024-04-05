@@ -79,7 +79,7 @@ a:hover {
     background-color: transparent;
     position: absolute;
     z-index: 1;
-    left: 220px;
+    left: 250px;
     font-size: 25px;
 }
 
@@ -89,7 +89,7 @@ a:hover {
     background-color: transparent;
     position: absolute;
     z-index: 1;
-    right: 220px;
+    right: 250px;
     font-size: 25px;
 }
 

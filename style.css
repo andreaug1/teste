@@ -79,7 +79,7 @@ a:hover {
     background-color: transparent;
     position: absolute;
     z-index: 1;
-    left: 220px;
+    left: 260px;
     font-size: 25px;
 }
 
@@ -89,7 +89,7 @@ a:hover {
     background-color: transparent;
     position: absolute;
     z-index: 1;
-    right: 220px;
+    right: 260px;
     font-size: 25px;
 }
 
@@ -160,9 +160,13 @@ a:hover {
 
     }
 
+    #apresentaçao {
+        margin: 40px 50px;
+    }
+
     #figura {
-        width: 200px;
-        height: 100px;
+        width: 300px;
+        height: 150px;
     }
 
     #setas{
@@ -171,6 +175,24 @@ a:hover {
         align-items: center;
         border: none;
         background-color: none;
+
     } 
 
+    #left {
+        border: none;
+        background-color: transparent;
+        position: absolute;
+        z-index: 1;
+        left: 400px;
+        font-size: 25px;
+    }
+    
+    #right {
+        border: none;
+        background-color: transparent;
+        position: absolute;
+        z-index: 1;
+        right: 400px;
+        font-size: 25px;
+    }
 }

@@ -55,43 +55,13 @@ a:hover {
     margin: 10px 75px;
 }
 
-
-#left:hover {
-    background-color:rgb(	211,211,211);
-    border-radius: 20px;
+#figura {
+    opacity: 1;
+    transition: opacity 0.4s ease;
+    width: 800px;
+    height: 400px;
 }
 
-#right:hover {
-    background-color:rgb(	211,211,211);
-    border-radius: 20px;
-}
-
-#setas {
-    display: flex;
-  /*justify-content: center;
-    align-items: center;*/
-    border: none;
-    background-color: none;
-}
-
-#left {
-    border: none;
-    background-color: transparent;
-    position: absolute;
-    z-index: 1;
-    left: 260px;
-    font-size: 25px;
-}
-
-
-#right {
-    border: none;
-    background-color: transparent;
-    position: absolute;
-    z-index: 1;
-    right: 260px;
-    font-size: 25px;
-}
 
 @media (max-width: 730px) {
 
@@ -165,34 +135,9 @@ a:hover {
     }
 
     #figura {
-        width: 300px;
-        height: 150px;
+        width: 200px;
+        height: 100px;
     }
 
-    #setas{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        border: none;
-        background-color: none;
-
-    } 
-
-    #left {
-        border: none;
-        background-color: transparent;
-        position: absolute;
-        z-index: 1;
-        left: 400px;
-        font-size: 25px;
-    }
     
-    #right {
-        border: none;
-        background-color: transparent;
-        position: absolute;
-        z-index: 1;
-        right: 400px;
-        font-size: 25px;
-    }
 }

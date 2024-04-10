@@ -17,13 +17,3 @@ function toggleMenu(event) {
 btnMobile.addEventListener('click', toggleMenu);
 btnMobile.addEventListener('touchstart', toggleMenu);
 
-/*trocar de imagens */
-  var imagens = ["contato.png", "escola.png", "fazenda.png"]; // Lista de caminhos das imagens
-  var indiceAtual = 0; // Índice da imagem atual
-
-  function trocarImagem() {
-    var imagem = document.getElementById("figura");
-    indiceAtual = (indiceAtual + 1) % imagens.length; // Atualiza o índice para a próxima imagem
-    imagem.src = imagens[indiceAtual]; // Define o novo caminho da imagem
-    imagem.alt = "Imagem " + (indiceAtual + 1); // Atualiza o texto alternativo, se necessário
-  }

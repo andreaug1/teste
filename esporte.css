@@ -1,0 +1,127 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+body {
+    padding: 0;
+    margin: 0;
+    background-color: white;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+}
+
+h2 {
+    color: black;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+a:hover {
+    background-color: #0f72bd;
+}
+
+#logo {
+    display: flex;
+    width: 90px;
+    border-radius: 50%;
+}
+
+#nav {
+    display: flex;
+    align-items: center;
+}
+
+#header {
+    box-sizing: border-box;
+    height: 70px;
+    width: 100%;
+    padding: 3rem ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 10;
+    background-color: #00498b;
+}
+
+#menu {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    gap:.9rem;
+}
+
+#menu a {
+    display: block;
+    padding: 1.5rem; 
+}
+
+h1{
+    display: flex;
+    font-family: 'Inter', sans-serif;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+}    
+
+h2{
+    display: flex;
+    font-family: 'Inter', sans-serif;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+}    
+
+#ns {
+    
+}
+
+#nova {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+#esportemenu {
+    display: inline;
+    position: absolute;
+    padding-bottom:30px ;
+    left: 0px;
+    z-index: 4;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+#quem {
+    padding-bottom: 10px;
+    cursor: pointer;
+    list-style: none;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+#contatoesporte {
+    cursor: pointer;
+    list-style: none;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+
+#campeonatos {
+    cursor: pointer;
+    list-style: none;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+
+#jogadores {
+    cursor: pointer;
+    list-style: none;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}

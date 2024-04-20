@@ -23,8 +23,8 @@ a:hover {
 }
 
 #header {
-    box-sizing: border-box;
-    height: 70px;
+   box-sizing: border-box;
+   height: 70px;
     width: 100%;
     padding: 3rem ;
     display: flex;
